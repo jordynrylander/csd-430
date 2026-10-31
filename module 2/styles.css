@@ -1,0 +1,39 @@
+<%--
+Jordyn Rylander
+10/31/2026
+Module 2.2
+Display categorized character information from The Housemaid. but this is the css part
+--%>
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 2rem;
+    color: #222;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    background-color: #eee;
+}
+
+dt {
+    font-weight: bold;
+}
