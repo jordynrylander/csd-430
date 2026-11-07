@@ -1,0 +1,67 @@
+
+<!--
+Jordyn Rylander
+10/31/2026
+Module 2.2
+Collect information for a pretend job application.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>(Companies) Job Application</title>
+</head>
+<body>
+    <h1>Apply for (Company) today!</h1>
+    <p>Complete this form to apply for a position.</p>
+
+    <form action="displayApplication.jsp" method="post">
+        <label for="applicantName">Full name:</label>
+        <input type="text" id="applicantName" name="applicantName" required>
+        <br><br>
+
+        <label for="emailAddress">Email address:</label>
+        <input type="email" id="emailAddress" name="emailAddress" required>
+        <br><br>
+
+        <label for="phoneNumber">Phone number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        <br><br>
+
+ <!-- Position applied for -->
+<p>Which position are you applying for?</p>
+
+<input type="radio" id="cashier" name="position" value="Cashier" required>
+<label for="cashier">Cashier</label>
+
+<input type="radio" id="salesAssociate" name="position" value="Sales Associate">
+<label for="salesAssociate">Sales Associate</label>
+
+<input type="radio" id="customerService"
+       name="position" value="Customer Service Representative">
+<label for="customerService">Customer Service Representative</label>
+<br><br>
+        <br><br>
+
+        <label for="yearsExperience">Years of related experience:</label>
+        <input type="number" id="yearsExperience" name="yearsExperience"
+               min="0" max="50" required>
+        <br><br>
+<!-- Pick Schedule -->
+        <p>Preferred schedule:</p>
+        <input type="radio" id="fullTime" name="schedule" value="Full-time" required>
+        <label for="fullTime">Full-time</label>
+        <input type="radio" id="partTime" name="schedule" value="Part-time">
+        <label for="partTime">Part-time</label>
+        <br><br>
+
+        <label for="relevantSkills">Relevant skills:</label>
+        <textarea id="relevantSkills" name="relevantSkills" rows="4" cols="40"
+                  required></textarea>
+        <br><br>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>
